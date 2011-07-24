@@ -1,0 +1,15 @@
+# lindenmayer
+
+An implementation of a Lindenmayer System.  Inspired by the article: 
+"Algorithmic Composition: Computational Thinking in Music" by Michael Edwards
+in the Communications of the ACM, Vol 54, No 7
+
+## Usage
+
+FIXME: write
+
+## License
+
+Copyright (C) 2011 Nick Orton
+
+Distributed under the Eclipse Public License, the same as Clojure.
