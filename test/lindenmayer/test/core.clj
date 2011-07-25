@@ -8,5 +8,6 @@
 
 (def undertest (l-sys rules ))
 
-(deftest expand
-  (is (= [:a :b :c] (beta-subs undertest [:a] ))))
+(deftest test-expand
+  (is (= [:a :b :c ] (expand undertest [:a] )))
+  (is (= [:a :b :c :b :b :c :b :a] (expand undertest (expand undertest [:a] )))))
