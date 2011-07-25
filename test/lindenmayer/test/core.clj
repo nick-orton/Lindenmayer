@@ -2,5 +2,7 @@
   (:use [lindenmayer.core])
   (:use [clojure.test]))
 
-(deftest replace-me ;; FIXME: write
-  (is false "No tests have been written."))
+(def undertest (l-sys {:a [:a :b :c] :b [:b :b] :c [:c :b :a]}))
+
+(deftest expand
+  (is (= [:a :b :c] (beta-subs undertest [:a] ))))
