@@ -6,7 +6,13 @@ in the Communications of the ACM, Vol 54, No 7
 
 ## Usage
 
-FIXME: write
+A Grammar takes the form of an Associative map of token to production sequence.
+All symbols in the Grammar used must be non-terminal.
+
+l-sys will construct a Lindenmayer System from a Grammar.
+
+expand-n will expand an l-sys n times starting from a seed sequence.
+
 
 ## License
 
