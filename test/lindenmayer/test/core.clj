@@ -14,3 +14,10 @@
 
 (deftest test-expand-n
   (is (= [:a :b :c :b :b :c :b :a] (expand-n undertest [:a] 2))))
+
+(def badrules {:a [:a :b]})
+
+(deftest test-validate
+  (try (do (l-sys badrules)
+         (is false "should have thrown exception"))
+       (catch IllegalArgumentException _)))
